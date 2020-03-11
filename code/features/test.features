@@ -1,0 +1,28 @@
+Feature: Test feature
+
+  Background:
+    Given I am on home page
+
+  @valid
+  Scenario: go to football page
+    When I click on Football tab
+    Then I am able to find countries tab
+
+  @valid
+  Scenario: number of top news should be correct
+    When I click on Football tab
+    Then I see correct number of top news
+
+  @valid
+  Scenario: page should have the correct tag
+    When I click on Football tab
+    Then Football page has the correct tag
+
+  #@valid
+  #Scenario Outline: page should have the correct tag
+  #  When I click on "<page_name>" tab
+  #  Then "<page_name>" has the correct tag "<tag_name>"
+
+  #  Examples:
+  #  | page_name       | tag_name |
+  #  | FootballPage    | "Футбол" |
