@@ -8,6 +8,7 @@ class FootballPage
   unordered_list(:main_posts, css: '.three_news > ul:nth-child(2)')
 
   def count_number_of_top_news
+    # TODO: find the way to get number of child elements usign POG
     main_posts.count
   end
 end
